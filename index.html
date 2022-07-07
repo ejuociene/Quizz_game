@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="start">
+            <h1 class="start_heading">Welcome to the Quiz!</h1>
+            <h2 class="difficulty_text">Please select difficulty:</h2>
+            <div class="difficulty">
+                <button class="difficulty_btn easy">Easy</button>
+                <button class="difficulty_btn medium">Medium</button>
+                <button class="difficulty_btn hard">Hard</button>
+            </div>
+            <p class="begin hidden">let's go!</p>
+        </div>
+        <div class="question_container hidden">
+            <div class="top_header">
+                <h2 class="score_text">Score: <span class="score_count">0</span></h2>
+                <h2 class="question_count_text"><span class="question_count">0</span>/10</h2>
+            </div>
+            <h2 class="category"></h2>
+            <h1 class="question_text">Question:</h1>
+            <div class="choices_container">
+                <p class="choice choiceA_text" data-index="0"></p>
+                <p class="choice choiceB_text" data-index="1"></p>
+                <p class="choice choiceC_text" data-index="2"></p>
+                <p class="choice choiceD_text" data-index="3"></p>
+                <p class="success"></p>
+            </div>
+        </div>
+        <div class="game_end_container hidden">
+            <h1 class="game_end_text">Game finished!</h1>
+            <h2 class="game_end_score_text">Final score: <span class="game_end_score_count"></span></h2>
+            <h2 class="highscore_text">Your highscore: <span class="highscore_display"></span></h2>
+            <button class="play_again_btn">Play Again</button>
+            <p class="new_highscore hidden">NEW HIGHSCORE!</p>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+:root {
+	--font-fun: 'Luckiest Guy', cursive;
+	--font-usual: 'Montserrat', sans-serif;
+}
+
+body {
+	font-family: var(--font-usual);
+	font-size: 24px;
+	background-color: #001219;
+	box-sizing: border-box;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 500px;
+	min-height: 750px;
+	margin: 60px auto;
+	background-color: #0a9396;
+	border: 10px solid #94d2bd;
+	color: white;
+	border-radius: 15px;
+}
+.start {
+	margin: 170px 30px 50px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.start_heading {
+	font-family: var(--font-fun);
+	text-align: center;
+	font-size: 48px;
+	font-weight: 500;
+}
+
+.difficulty_text {
+	margin: 80px 30px 30px 30px;
+}
+
+.difficulty {
+	margin-top: 20px;
+	display: flex;
+	gap: 10px;
+}
+
+.difficulty_btn {
+	width: 120px;
+	height: 70px;
+	border-radius: 10px;
+	font-family: var(--font-usual);
+	font-size: 20px;
+	font-weight: 500;
+	background-color: #94d2bd;
+	color: #001219;
+	border: 2px solid white;
+}
+
+.difficulty_btn:hover {
+	background-color: #ee9b00;
+	color: white;
+	border: 2px solid white;
+	cursor: pointer;
+	transform: translateY(-2px);
+}
+
+.begin {
+	font-family: 'Luckiest Guy', cursive;
+	color: white;
+	margin-top: 50px;
+	font-size: 48px;
+}
+
+.question_container {
+	width: 100%;
+}
+
+.top_header {
+	font-family: var(--font-fun);
+	color: #005f73;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 30px 0;
+}
+
+.score_text {
+	padding: 20px 40px;
+	background-color: #94d2bd;
+	width: 130px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.question_count_text {
+	padding: 20px 40px;
+	background-color: #94d2bd;
+	width: 40px;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+.category {
+	text-align: center;
+	margin: 20px auto 0 auto;
+	font-size: 16px;
+	width: 300px;
+	padding: 5px;
+	background-color: #005f73;
+	border-top: 2px solid #94d2bd;
+	border-left: 2px solid #94d2bd;
+	border-right: 2px solid #94d2bd;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.question_text {
+	border: 2px solid #94d2bd;
+	border-radius: 30px;
+	background-color: #005f73;
+	margin: 0 20px 20px;
+	padding: 40px;
+	text-align: center;
+}
+
+.choice {
+	margin: 0 40px 10px;
+	text-align: center;
+	color: #001219;
+	font-weight: 500;
+	padding: 15px 10px;
+	border-radius: 30px;
+	background-color: #ee9b00;
+}
+
+.choice:hover {
+	cursor: pointer;
+	background-color: #ff6d00;
+	color: white;
+	transform: translateY(-2px);
+}
+
+.game_end_container {
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.game_end_text {
+	font-family: var(--font-fun);
+	font-size: 48px;
+}
+
+.game_end_score_text {
+	font-family: var(--font-fun);
+	margin-top: 100px;
+	font-size: 40px;
+}
+
+.highscore_text {
+	margin-top: 30px;
+}
+
+.new_highscore {
+	font-family: 'Luckiest Guy', cursive;
+	color: #ee9b00;
+	margin-top: 50px;
+	font-size: 48px;
+}
+
+.play_again_btn {
+	font-family: var(--font-usual);
+	font-size: 24px;
+	font-weight: 500;
+	background-color: #94d2bd;
+	color: #001219;
+	border: 3px solid white;
+	border-radius: 30px;
+	width: 200px;
+	height: 100px;
+	margin-top: 70px;
+}
+
+.play_again_btn:hover {
+	background-color: #ee9b00;
+	transform: translateY(-2px);
+	cursor: pointer;
+}
+
+.success {
+	color: #94d2bd;
+	text-align: center;
+	margin: 30px 0;
+	font-weight: 500;
+}
+
+.hidden {
+	display: none;
+}
+
+.selectedBtn {
+	background-color: #ee9b00;
+	color: white;
+	border: 2px solid white;
+}
+
+.err {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 50px;
+}
